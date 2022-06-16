@@ -1,0 +1,26 @@
+To setup Tailwiind CSS via CLI just follow the steps below:
+
+1) npm init -y
+2) npm install -D tailwindcss
+3) npx tailwindcss init
+4) Open tailwind.config.js file and change 
+    content: ["*"],
+5) Create input.css file in src folder and add these lines in it:
+    @tailwind base;
+    @tailwind components;
+    @tailwind utilities;
+6) Open package.json file and paste (replace) below lines of code in it:
+    "scripts": {
+    "build": "tailwindcss -i ./src/input.css -o ./css/output.css",
+    "watch": "tailwindcss -i ./src/input.css -o ./css/output.css --watch"
+  },
+7) Now open terminal and run this command:
+    npm run build
+8) Create an inddex.html file and link output.css file in it
+    <link rel="stylesheet" href="css/output.css">
+9) Now add code in the index.html file and run this command:
+    npm run watch
+10) Now start the live server and write the code into index.html
+11) Sometimes we need to refresh the page opened by live server.
+
+
