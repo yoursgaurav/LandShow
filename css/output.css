@@ -626,7 +626,13 @@ video {
 }
 
 .hero-image{
-  width: 80%;
+  max-width: 26rem;
+}
+
+@media only screen and (max-width:500px){
+  .hero-image{
+    width: 80%;
+  }
 }
 
 .order-2{
@@ -653,6 +659,10 @@ video {
   margin-bottom: 1rem;
 }
 
+.flex{
+  display: flex;
+}
+
 .hidden{
   display: none;
 }
@@ -663,6 +673,14 @@ video {
 
 .items-center{
   align-items: center;
+}
+
+.justify-center{
+  justify-content: center;
+}
+
+.text-center{
+  text-align: center;
 }
 
 .text-xl{
@@ -751,5 +769,17 @@ video {
 
   .lg\:hidden{
     display: none;
+  }
+
+  .lg\:justify-start{
+    justify-content: flex-start;
+  }
+
+  .lg\:pr-44{
+    padding-right: 11rem;
+  }
+
+  .lg\:text-left{
+    text-align: left;
   }
 }

@@ -19,9 +19,14 @@
     }
 
     .hero-image{
-        @apply w-4/5;
+        max-width: 26rem;
     }
 
+    @media only screen and (max-width:500px){
+        .hero-image{
+            @apply w-4/5;
+        }
+    }
 }
 
 @layer utilities {
