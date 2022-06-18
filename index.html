@@ -17,11 +17,12 @@
     <header class="font-normal my-3">
         <nav class="navbar">
             <div class="logo text-xl text-primary font-bold">LOGO</div>
-            <button class="lg:hidden"><i class="fa-solid fa-bars"></i></button>
-            <ul class="nav-menu lg:flex items-center hidden">
-                <li><a href="#" class="mx-2">Home</a></li>
-                <li><a href="#" class="mx-2">Features</a></li>
-                <li><a href="#" class="mx-4">Pricing</a></li>
+            <button class="lg:hidden" id="toggleButton" onclick="toggleMenu"><i class="fa-solid fa-bars"></i></button>
+            <ul class="lg:flex flex flex-col lg:flex-row items-center justify-center hidden absolute top-16 left-4 right-4 bottom-0 bg-white lg:static"
+                id="nav-menu">
+                <li class="lg:my-0 m-2"><a href="#">Home</a></li>
+                <li class="lg:my-0 m-2"><a href="#">Features</a></li>
+                <li class="lg:my-0 m-2"><a href="#">Pricing</a></li>
                 <button class="btn btn-primary">Download App</button>
             </ul>
         </nav>
@@ -29,8 +30,10 @@
 
     <section class="hero-section">
         <div class="box w-full lg:pr-44 order-2 lg:order-1">
-            <h1 class="heading my-4 dark:text-white lg:text-left text-center">Landing Page for any <span class="text-primary">purpose</span></h1>
-            <p class="lg:text-left text-center">This is random text instead of lorem ipsum this is just for better view this is random text instead of
+            <h1 class="heading my-4 dark:text-white lg:text-left text-center">Landing Page for any <span
+                    class="text-primary">purpose</span></h1>
+            <p class="lg:text-left text-center">This is random text instead of lorem ipsum this is just for better view
+                this is random text instead of
                 lorem ipsum this is just for lorem ipsum this is just for better view.</p>
             <div class="my-4 flex justify-center lg:justify-start">
                 <button class="btn btn-primary">CTA Button</button>
@@ -41,6 +44,8 @@
             <img src="img/hero-image.png" alt="Hero-image" srcset="" class="hero-image">
         </div>
     </section>
+
+    <script src="js/main.js"></script>
 
 </body>
 
