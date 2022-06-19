@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" class="light">
+<html lang="en" id="mode">
 
 <head>
     <meta charset="UTF-8">
@@ -17,14 +17,19 @@
     <header class="font-normal my-3">
         <nav class="navbar">
             <div class="logo text-xl text-primary font-bold">LOGO</div>
-            <button class="lg:hidden" id="toggleButton" onclick="toggleMenu"><i class="fa-solid fa-bars"></i></button>
-            <ul class="lg:flex flex flex-col lg:flex-row items-center justify-center hidden absolute top-16 left-4 right-4 py-5 lg:py-0 shadow-lg lg:shadow-none bg-gray-50 lg:bg-transparent lg:static"
-                id="nav-menu">
-                <li class="lg:my-0 m-2"><a href="#">Home</a></li>
-                <li class="lg:my-0 m-2"><a href="#">Features</a></li>
-                <li class="lg:my-0 m-2"><a href="#">Pricing</a></li>
-                <button class="btn btn-primary">CTA Button</button>
-            </ul>
+            <div class="interact flex">
+
+                <button class="mx-4" id="mode-toggler"><i class="fa-solid fa-circle-half-stroke"></i></button>
+                <button class="lg:hidden" id="menu-toggler"><i class="fa-solid fa-bars"></i></button>
+
+                <ul class="lg:flex flex flex-col lg:flex-row items-center justify-center hidden absolute top-16 left-4 right-4 py-5 lg:py-0 shadow-lg lg:shadow-none bg-gray-50 lg:bg-transparent lg:static"
+                    id="nav-menu">
+                    <li class="lg:my-0 m-2"><a href="#">Home</a></li>
+                    <li class="lg:my-0 m-2"><a href="#">Features</a></li>
+                    <li class="lg:my-0 m-2"><a href="#">Pricing</a></li>
+                    <button class="btn btn-primary">CTA Button</button>
+                </ul>
+            </div>
         </nav>
     </header>
 
